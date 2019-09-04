@@ -13,6 +13,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
 	//  TODO: deklarasikan variabel di sini
+	private int number;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
 	// TODO: generate angka random di sini
 	private void initRandomNumber() {
-
+		Random random = new Random();
+		number = random.nextInt( 100) + 1;
 	}
 
 	public void handleGuess(View view) {
 		// TODO: Tambahkan logika untuk melakukan pengecekan angka
+
 	}
 
 	public void handleReset(View view) {
